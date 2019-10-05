@@ -1,0 +1,10 @@
+version: "3"
+services:
+  goproxy:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - "goproxy:/var/db/goproxy"
+volumes:
+  goproxy:
